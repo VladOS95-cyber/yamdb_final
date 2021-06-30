@@ -5,8 +5,7 @@ from django.core.mail import send_mail
 from django.db import models
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
-from rest_framework import (filters, permissions, serializers,
-                            status, viewsets)
+from rest_framework import filters, permissions, serializers, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -16,13 +15,11 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 from .filters import TitleFilter
 from .mixins import DeleteViewSet
 from .models import Category, CustomUser, Genre, Review, Title
-from .permissions import (IsAdmin, IsAdminOrReadOnly,
-                          IsOwnerOrReadOnly)
+from .permissions import IsAdmin, IsAdminOrReadOnly, IsOwnerOrReadOnly
 from .serializers import (AdminUserSerializer, CategorySerializer,
                           CommentSerializer, GenreSerializer, GetOTPSerializer,
                           MyTokenObtainPairSerializer, ReviewSerializer,
                           TitleSerializer, UserSerializer)
-
 
 EMAIL_ADDRESS_EXAMPLE = 'from@example.com'
 
