@@ -57,7 +57,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull vladislavbronzov95/yamdb_api
+            sudo docker pull vladislavbronzov95/yamdb_api:v1.0.0
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
