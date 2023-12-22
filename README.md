@@ -33,5 +33,6 @@ Filling in .env - the project uses a PostgreSQL database, and all the variables 
 Badge - https://github.com/VladOS95-cyber/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
 
 Project author: Vladislav Bronzov
+
 Email: vladislav.bronzov@gmail.com
 
