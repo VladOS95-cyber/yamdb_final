@@ -27,7 +27,9 @@ Create superuser
 docker-compose exec web python manage.py createsuperuser
 ```
 Fill database by initial data ./manage.py loaddata fixtures.json
+
 Filling in .env - the project uses a PostgreSQL database, and all the variables necessary to configure a connection to the database are located in the .env file.
+
 Badge - https://github.com/VladOS95-cyber/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
 
 Project author: Владислав Бронзов
