@@ -1,17 +1,35 @@
-Название проекта - API_YamDB
-Краткое описание - API для проекта YamDB (собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка».), реализованное на основе REST_API framework. 
-Создан алгоритм регистрации(по email) и аутентификации пользователей, добавлены пользовательские роли. Также реализованы запросы GET, POST, PATCH, DEL для получения или изменения данных в форате json. 
-Детальное описание запросов и получение данных находятся по адресу: http://127.0.0.1:8070/redoc/
-Клонирование репозитория - git clone https://github.com/VladOS95-cyber/yamdb_final
-Инструкция по установке Docker(windows) - https://docs.docker.com/docker-for-windows/install/
-Запуск контейнеров - docker start infra_sp2_db_1, docker start infra_sp2_nginx_1, infra_sp2_web_1
-Запуск сервера - CMD python /code/manage.py runserver 0:8070 (прописать последней строкой в Dockerfile)
-Команда для создание суперпользователя - docker-compose exec web python manage.py createsuperuser
-Команда для заполнения базы начальными данными - ./manage.py loaddata fixtures.json
-Заполнение .env - проект использует базу данных PostgreSQL, и все переменные необходимые для настройки подключенияк базе, находятся
-в файле .env.
-Бейдж - https://github.com/VladOS95-cyber/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
+## API_YamDB
 
-Автор проекта: Владислав Бронзов
-Почта автора: vladislav.bronzov@gmail.com
+## Description
+API for the YamDB project which collects user reviews of works. Works are divided into categories: “Books”, “Movies”, “Music” and implemented based on Django REST_API framework using Python.
+A detailed description of requests and data retrieval are located at: http://127.0.0.1:8070/redoc/
+
+## Instructions
+An algorithm for registration (by email) and user authentication has been created, and user roles have been added. GET, POST, PATCH, DEL requests are also implemented to obtain or change data in json format.
+Clone repo 
+```bash
+git clone https://github.com/VladOS95-cyber/yamdb_final
+```
+
+Docker installation - https://docs.docker.com/docker-for-windows/install/
+
+
+Run containers
+```bash
+docker start infra_sp2_db_1, docker start infra_sp2_nginx_1, infra_sp2_web_1
+```
+Run servers
+```bash
+CMD python /code/manage.py runserver 0:8070
+```
+Create superuser
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+Fill database by initial data ./manage.py loaddata fixtures.json
+Filling in .env - the project uses a PostgreSQL database, and all the variables necessary to configure a connection to the database are located in the .env file.
+Badge - https://github.com/VladOS95-cyber/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
+
+Project author: Владислав Бронзов
+Email: vladislav.bronzov@gmail.com
 
